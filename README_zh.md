@@ -1,4 +1,4 @@
-# Image To Code
+# AI Image To Code
 
 [English](./README.md)
 

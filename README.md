@@ -1,4 +1,4 @@
-# Image To Code
+# AI Image To Code
 
 [中文版](./README_zh.md)
 

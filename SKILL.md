@@ -13,7 +13,7 @@ metadata:
     - https://github.com/MiniMax-AI/skills
 ---
 
-# Image to Code
+# AI Image to Code
 
 Use when (1) user provides a UI screenshot or image and asks to convert it into HTML, CSS, or component code. (2) user says "turn this into code", "rebuild this UI", "code this design", or "generate HTML from screenshot". (3) user pastes an image and says "write the React component for this".
 
