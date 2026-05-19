@@ -1,71 +1,86 @@
-# User Provides Screenshot
+# Image To Code
 
 [中文版](./README_zh.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.1-blue)](SKILL.md)
+[![Version](https://img.shields.io/badge/version-1.0-blue)](SKILL.md)
 
-> user provides a UI screenshot image and needs to extract the layout into HTML CSS code
+> Converts UI screenshots into HTML/CSS or React components — rebuilds designs as working code
 
 ## What Problem This Solves
 
-Brief paragraph explaining the specific engineering problem this skill solves.
-When triggered: [trigger condition].
+User has a design mockup or screenshot and needs it as actual code they can run — not a description, not a Figma export, but working HTML/CSS or a React component that looks like the original.
+
+**When triggered:** UI screenshot/image + code/generate/rebuild intent.
 
 ## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- **Vision-powered layout extraction** — analyzes screenshot for structure (header, sidebar, main content), color palette, typography hierarchy, and spacing
+- **Multi-format output** — plain HTML/CSS (default) or React + Tailwind CSS (for component requests)
+- **Mobile-first responsive** — detects mobile screenshots and outputs `max-width: 375px` containers
+- **Placeholder content** — uses contextually appropriate text ("Price: $49.99" not generic lorem ipsum)
 
 ## Quick Start
 
-### Installation
-
 ```bash
 # Via ClawHub
-clawhub install User Provides Screenshot
+clawhub install image-to-code
 
 # Or manually
-cp -r User Provides Screenshot ~/.openclaw/skills/
+cp -r image-to-code ~/.openclaw/skills/
 ```
 
 ### Usage
 
-```bash
-# Mode 1
-clawhub run User Provides Screenshot --mode read
-
-# Mode 2
-clawhub run User Provides Screenshot --mode write --input ./data.json
 ```
+/image-to-code
+```
+
+Paste screenshot, ask to generate HTML/CSS.
+
+```
+/image-to-code/react
+```
+
+Asks for React + Tailwind output instead of plain HTML.
+
+```
+/image-to-code/describe
+```
+
+Just want a text description of the layout first — no code generation.
+
+## Modes
+
+| Mode | Description |
+|------|-------------|
+| `/image-to-code` | Converts UI image to HTML/CSS |
+| `/image-to-code/react` | Outputs React functional component with Tailwind |
+| `/image-to-code/describe` | Text description of layout, no code |
+
+## Examples
+
+| Input | Output |
+|-------|--------|
+| E-commerce product card | "Price: $49.99 — Add to Cart" contextually appropriate |
+| Dark mode UI screenshot | Dark background, light text, correct contrast applied |
+| Mobile app screen | `max-width: 375px` container, mobile-first |
+| Complex dashboard | Grid layout with sidebar, header, main panels |
 
 ## Directory Structure
 
 ```
-User Provides Screenshot/
-├── SKILL.md          # Entry point
-├── LICENSE           # MIT
-├── README.md         # This file
-├── README_zh.md      # Chinese version
-├── CONTRIBUTING.md    # Contribution guide
+image-to-code/
+├── SKILL.md
+├── LICENSE
+├── README.md
+├── README_zh.md
+├── CONTRIBUTING.md
 ├── .gitignore
-├── references/       # Templates and schemas
-│   └── ...
-└── scripts/          # Helper scripts (if any)
-    └── ...
+├── references/       # Color extraction, layout patterns, Tailwind mapping
+└── tests/
 ```
-
-## Configuration
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `API_KEY` | Yes | API key for the service |
 
 ## License
 
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
-
----
-
-Powered by [MiniMax](https://minimax.io).
+MIT License — see [LICENSE](LICENSE).
