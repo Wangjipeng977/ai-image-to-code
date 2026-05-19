@@ -36,13 +36,13 @@ python scripts/audit_skill.py .
 
 # 4. Commit your changes
 git add .
-git commit -m "feat(image-to-code): add <brief description>"
+git commit -m "feat(ai-image-to-code): add <brief description>"
 
 # 5. Push to your fork
 git push origin feat/<your-feature-name>
 
 # 6. Open a Pull Request on GitHub
-#    - Title: feat(image-to-code): add <brief description>
+#    - Title: feat(ai-image-to-code): add <brief description>
 #    - Description: What + Why + Testing
 ```
 

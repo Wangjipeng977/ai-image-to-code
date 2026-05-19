@@ -24,28 +24,28 @@ User has a design mockup or screenshot and needs it as actual code they can run 
 
 ```bash
 # Via ClawHub
-clawhub install image-to-code
+clawhub install ai-image-to-code
 
 # Or manually
-cp -r image-to-code ~/.openclaw/skills/
+cp -r ai-image-to-code ~/.openclaw/skills/
 ```
 
 ### Usage
 
 ```
-/image-to-code
+/ai-image-to-code
 ```
 
 Paste screenshot, ask to generate HTML/CSS.
 
 ```
-/image-to-code/react
+/ai-image-to-code/react
 ```
 
 Asks for React + Tailwind output instead of plain HTML.
 
 ```
-/image-to-code/describe
+/ai-image-to-code/describe
 ```
 
 Just want a text description of the layout first — no code generation.
@@ -54,9 +54,9 @@ Just want a text description of the layout first — no code generation.
 
 | Mode | Description |
 |------|-------------|
-| `/image-to-code` | Converts UI image to HTML/CSS |
-| `/image-to-code/react` | Outputs React functional component with Tailwind |
-| `/image-to-code/describe` | Text description of layout, no code |
+| `/ai-image-to-code` | Converts UI image to HTML/CSS |
+| `/ai-image-to-code/react` | Outputs React functional component with Tailwind |
+| `/ai-image-to-code/describe` | Text description of layout, no code |
 
 ## Examples
 
@@ -70,7 +70,7 @@ Just want a text description of the layout first — no code generation.
 ## Directory Structure
 
 ```
-image-to-code/
+ai-image-to-code/
 ├── SKILL.md
 ├── LICENSE
 ├── README.md

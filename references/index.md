@@ -1,4 +1,4 @@
-# image-to-code — References
+# ai-image-to-code — References
 
 Detailed documents for `user-provides-screenshot` skill.
 

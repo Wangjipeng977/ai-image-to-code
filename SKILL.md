@@ -1,5 +1,5 @@
 ---
-name: image-to-code
+name: ai-image-to-code
 description: >
   Use when (1) user provides a UI screenshot or image and asks to convert it into HTML, CSS, or component code. 
   (2) user says "turn this into code", "rebuild this UI", "code this design", or "generate HTML from screenshot". 
@@ -30,19 +30,19 @@ This skill IS activated ONLY when: image (screenshot/mockup) + code generation i
 
 ## Modes
 
-### `/image-to-code`
+### `/ai-image-to-code`
 
 **Default mode.** Converts a UI image into a complete HTML/CSS implementation.
 
 When to use: User provides a screenshot and wants a working HTML page that resembles it.
 
-### `/image-to-code/react`
+### `/ai-image-to-code/react`
 
 Outputs a React functional component using Tailwind CSS.
 
 When to use: User explicitly asks for React or a component, not a plain HTML page.
 
-### `/image-to-code/describe`
+### `/ai-image-to-code/describe`
 
 Provides a detailed text description of the layout without writing code.
 

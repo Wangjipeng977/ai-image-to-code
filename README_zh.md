@@ -24,28 +24,28 @@
 
 ```bash
 # 通过 ClawHub 安装
-clawhub install image-to-code
+clawhub install ai-image-to-code
 
 # 或手动复制
-cp -r image-to-code ~/.openclaw/skills/
+cp -r ai-image-to-code ~/.openclaw/skills/
 ```
 
 ### 使用方法
 
 ```
-/image-to-code
+/ai-image-to-code
 ```
 
 粘贴截图，要求生成 HTML/CSS。
 
 ```
-/image-to-code/react
+/ai-image-to-code/react
 ```
 
 要求 React + Tailwind 输出，而不是纯 HTML。
 
 ```
-/image-to-code/describe
+/ai-image-to-code/describe
 ```
 
 只想先获取布局的文本描述——不生成代码。
@@ -54,9 +54,9 @@ cp -r image-to-code ~/.openclaw/skills/
 
 | 模式 | 说明 |
 |------|------|
-| `/image-to-code` | 将 UI 图片转换为 HTML/CSS |
-| `/image-to-code/react` | 输出 React 函数组件 + Tailwind |
-| `/image-to-code/describe` | 布局的文本描述，无代码 |
+| `/ai-image-to-code` | 将 UI 图片转换为 HTML/CSS |
+| `/ai-image-to-code/react` | 输出 React 函数组件 + Tailwind |
+| `/ai-image-to-code/describe` | 布局的文本描述，无代码 |
 
 ## 示例
 
@@ -70,7 +70,7 @@ cp -r image-to-code ~/.openclaw/skills/
 ## 目录结构
 
 ```
-image-to-code/
+ai-image-to-code/
 ├── SKILL.md
 ├── LICENSE
 ├── README.md
